@@ -1,0 +1,17 @@
+##
+# Host Database
+#
+# localhost is used to configure the loopback interface
+# when the system is booting.  Do not change this entry.
+##
+127.0.0.1	localhost
+255.255.255.255	broadcasthost
+::1             localhost
+### Begin DesktopServer - do not edit this and proceeding lines ###
+127.0.0.1	wordpress.dev.cc
+127.0.0.1	wordpress2.dev.cc
+### End DesktopServer - do not edit this and preceeding lines ###
+## Local by Flywheel - Start ##
+192.168.95.100 wordpress.local #Local Site
+192.168.95.100 www.wordpress.local #Local Site
+## Local by Flywheel - End ##
