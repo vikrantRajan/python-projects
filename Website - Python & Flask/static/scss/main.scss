@@ -5,89 +5,76 @@
 body { 
   margin: 0; 
   height: 100vh;
-}
-
-canvas { 
-  display: block;
-  position: relative;
-}
-
-h1 {
-  z-index: 999;
-  position: absolute;
-  top: 2em;
-  left: 2em;
-  font-family: 'Montserrat';
-  font-size: 7em;
-  text-transform: uppercase;
-  width: auto;
-  line-height: .8em;
-  border: 5px solid black;
-  padding: .2em;
-}
-.formContainer {
-  background-color: white;
-  display: block;
-  opacity: 0.8;
-  width: 30%;
-  margin: 50px auto 50px auto;
-  padding: 40px 30px 40px 30px;
-  font-family: $font;
-  text-align: center;
-  box-shadow: 0 0 20px 0 #00000054;
-  @include mq-tb() {
-    width: 50%;
-  }
-  @include mq-sp() {
-    width: 80%;
-  }
-
-  form {
-    padding: 0px;
-  }
-
-  input {
-    border-bottom: solid grey 0.5px;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    padding: 15px 0px 15px 10px;
-    color: grey;
-    margin-top: 10px;
-    width: 90%;
-    font-family: $font;
-    transition: all 0.3s ease;
-    &:focus {
-      border-bottom: solid 10px orangered;
-    }
-  }
-  textarea {
-    width: 90%;
-    height: 200px;
-    margin: 30px 0;
-  }
-  .submit {
-    background-color: black;
+  canvas { 
     display: block;
-    color: white;
-    font-family: $font;
-    font-weight: bold;
+    position: relative;
     width: 100%;
-    text-align: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    transition: all 0.4s ease;
+    z-index: 999;
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    font-family: 'Montserrat';
+    font-size: 2em;
     text-transform: uppercase;
-    transition: all 1s cubic-bezier(0.57, 0.05, 0.25, 1);
-    padding: 20px 40px;
-    letter-spacing: 2px;
-    display: block;
-    margin: 20px auto;
+    width: auto;
+    line-height: .8em;
+    border: 2px solid black;
+    padding: .2em;
     &:hover {
-      background-color: orangered;
+      letter-spacing: 10px;
     }
-    &:hover input {
+    a {
+      text-decoration: none;
+    }
+
+  }
+  p {
+    z-index: 999;
+    position: absolute;
+    top: 8em;
+    left: 4em;
+    font-family: 'Montserrat';
+    font-size: 1em;
+  }
+
+  .one {
+    color: black;
+    a{
+
       color: black;
-      font-weight: bold;
-      padding: 10px 0px 10px 0px;
-      margin: 0px;
+    }
+  }
+
+  .two {
+    border-color: aliceblue;
+    color: aliceblue;
+    a{
+
+      color: aliceblue;
+    }
+  }
+
+  .three {
+    border-color: black;
+    color: black;
+    a{
+
+      color: black;
+    }
+  }
+
+  .four {
+    border-color: white;
+    color: white;
+    a{
+      
+      color: white;
     }
   }
 }
+

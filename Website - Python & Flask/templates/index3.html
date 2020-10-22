@@ -1,51 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>My first three.js app</title>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Anton|Montserrat:900&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      body {
-        margin: 0;
-        background: black;
-      }
-      h1 {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 900;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        color: orange;
-        text-align: center;
-      }
-      p {
-        color: orange;
-      }
-      canvas {
-        width: 100%;
-        height: 60vh;
-      }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/static/css/main.css" />
   </head>
 
   <body>
+    <h1 class="three"><a href="/three">{{ heading }}</a></h1>
+    <p>{{ message }}</p>
     <header>
       <canvas id="c"></canvas>
     </header>
-    <h1>Savlon Healthy Hands Chalk Sticks</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, nobis
-      vitae quisquam necessitatibus, molestiae eligendi voluptatum ducimus
-      assumenda ab excepturi quibusdam laudantium optio porro, obcaecati labore?
-      Cupiditate vitae ullam officiis.
-    </p>
-
-    <script src="static/js/three.js"></script>
-    <script src="static/js/orbitControls.js"></script>
-    <script src="static/js/dat.gui.min.js"></script>
-    <script src="static/js/main.js"></script>
+    <script src="/static/js/three.js"></script>
+    <script src="/static/js/orbitControls.js"></script>
+    <script src="/static/js/index3.js"></script>
   </body>
 </html>
